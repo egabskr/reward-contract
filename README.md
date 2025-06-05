@@ -36,13 +36,10 @@ npx hardhat
 *Runs the local version of Hardhat from node_modules*
 *Choose yes in every question and just click enter if you've been asked to choose the folder*
 
-### 5. Move RewardContract.sol
-*Move RewardContract.sol to /contracts/*
-
-### 6. Change hardhat.config.js
+### 5. Change hardhat.config.js
 *Change hardhat.config.js that has been built with the one in repository*
 
-### 7. Create .env
+### 6. Create .env
 *Create .env file with this format:*
 ```bash
 PRIVATE_KEY= {sender private key}
@@ -51,15 +48,17 @@ CONTRACT_ADDRESS=0x9082da312A0044C4703E7fFA837e529FDC869227
 ```
 *You can change the entire RPC_URL link if you don't use alchemy*
 
-### 8. Install Packages
+### 7. Install Packages
 ```bash
 npm install express dotenv ethers
 ```
 *express: A web framework for Node.js used to create HTTP servers and APIs*
+
 *dotenv: Loads environment variables from a .env file into process.env*
+
 *ethers: A library to interact with the Ethereum blockchain*
 
-### 9. Run index.js
+### 8. Run index.js
 ```bash
 node index.js
 ```
